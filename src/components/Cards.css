@@ -1,0 +1,39 @@
+ .contact-info{
+    display: flex;
+    justify-content: space-evenly;
+    gap:30px;
+    align-items: center;
+    background: #bac4d2;
+    border-radius: 4px;
+    
+    
+ }
+  .contact-info .card .envelop img{
+    width: 30px;
+    height: 35px;
+  }
+
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .contact-info .card p:hover
+  {
+    color: var(--btnColor);
+  }
+
+@media (max-width:409.98px) 
+{
+  .contact-info .card i img
+  {
+    width: calc(20px) !important;
+  }  
+  .contact-info .card p
+  {
+    font-size: 10px !important;
+  }
+}

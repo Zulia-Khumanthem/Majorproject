@@ -1,0 +1,149 @@
+.footer
+{
+    background-color: var(--footerColor);
+    border-radius: 4px;
+}
+.footer .flex-content 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    margin: 0 20px 0 20px;
+    justify-content: space-evenly;
+    color: var(--font-color);
+}
+.flex-content h3
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.flex-content p
+{
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 30px;
+    width: 350px;
+}
+
+.flex-content h3 span
+{
+    border-bottom: 2px solid rgb(14, 117, 78);
+}
+
+.gallery h3 span
+{
+    margin-left: 50px;
+    text-transform: uppercase;
+    color: white;
+    border-bottom: 2px solid rgb(14, 117, 78);
+}
+
+.gallery .flex-first-column
+{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.gallery .flex-first-column img
+{
+    cursor: pointer;
+    width: calc(250px);
+    height: calc(250px);
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.gallery .flex-first-column img:hover
+{
+    opacity: 0.7;
+}
+
+
+.quicklinks
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.quicklinks,.copyright
+{
+    background-color: rgb(69, 67, 63);
+}
+.copyright
+{
+    height: 5vh;
+}
+
+.quicklinks ul
+{
+    margin: 30px 20px 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    list-style: none;
+    
+}
+
+.quicklinks ul li a
+{
+    color: var(--font-color);
+    text-decoration: none;
+    border-bottom: 2px solid rgb(14, 117, 78);
+}
+.quicklinks ul li a:hover
+{
+    opacity: 0.7;
+}
+.social-links
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 20px 30px 0;
+}
+
+.social-links .icon
+{
+    width: calc(50px);
+    height: calc(50px);
+}
+
+.social-links .icon img
+{
+    cursor: pointer;
+    padding: 10px;
+    width: calc(100%);
+    color: white;
+    background-color: var(--font-color);
+    border-radius: 50%;
+    transition: transform 500ms;
+}
+
+.social-links .icon img:hover
+{
+    animation:  pulse 1.5s alternate ease-in-out;
+}
+@keyframes pulse
+{
+    0%
+    {
+        transform: rotate(0) scale(1);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.copyright
+{
+    text-align: center;
+    color: var(--font-color);
+}

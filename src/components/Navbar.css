@@ -1,0 +1,183 @@
+:root
+{
+    --font-color: white;
+    --navbarBgColor: rgb(106, 105, 109);
+    --btnColor:  rgb(0, 69, 182);
+    --scrollthumb: rgb(168, 168, 168);
+    --footerColor: rgb(35, 36, 38);
+}
+::-webkit-scrollbar
+{
+    background-color: var(--font-color);
+    width: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: var(--scrollthumb);
+}
+*
+{
+    scroll-behavior: smooth;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo
+{
+    width: calc(100px);
+    height: calc(100px);
+    cursor: pointer;
+    margin: 0 0 0 20px;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.logo img
+{
+    width: calc(100%);
+    border-radius: 100%;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    background: var(--navbarBgColor);
+}
+
+.navbar .navlinks ul
+{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.navbar .navlinks ul li
+{
+    list-style:none;
+}
+.navbar .navlinks ul li a
+{
+    text-transform: uppercase;
+    color: var(--font-color);
+    font-size: 16px;
+    text-decoration: none;
+}
+.navbar .navlinks ul li a:hover
+{
+    opacity: 0.7;
+}
+
+
+.navbar button
+{
+    width: 70px;
+}
+.navbar button img
+{
+    width: calc(100%);
+    height: 100%;
+}
+.nav-btn
+{
+    margin: 20px;
+    background: transparent;
+}
+.nav-btn:hover
+{
+    background-color: var(--navbarBgColor);
+}
+
+.nav-btn
+{
+    visibility: hidden;
+    opacity: 0;
+}
+@media only screen and (max-width:1023.98px)
+{
+    .nav-btn
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navlinks nav
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 100%;
+        background-color: var(--navbarBgColor);
+        transition: 1s;
+        transform:translateY(-100vh);
+
+    }
+    .navlinks nav ul
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 20px;
+    }
+    .navlinks .responsive_nav
+    {
+        transform: none;
+    }
+
+    .navlinks .close-btn
+    {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        width: calc(50px);
+        padding: 10px;
+    }
+}
+
+@media (max-width:835.98px) 
+{
+    .header
+    {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+    .header .callUs img
+    {
+        margin-left: 100px;
+        width: 20px;
+    }
+    .header .location img
+    {
+        margin-left: 90px;
+        width: 20px;
+    }
+    button
+    {
+        padding:5px 10px;
+    }
+    .navbar .logo
+    {
+        width: calc(80px);
+    }
+    .navbar .logo img
+    {
+        width: calc(100%);
+    }
+    .navbar button
+    {
+        width: calc(50px);
+    }
+    .nav-btn img
+    {
+        width: calc(100%);
+    }
+}

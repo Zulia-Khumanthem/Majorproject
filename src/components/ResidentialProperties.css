@@ -1,0 +1,77 @@
+.ResidentialProperties
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.ResidentialProperties p
+{
+    text-align: center;
+}
+
+.ResidentialProperties h1{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ResidentialProperties h1 span
+{
+    color: rgb(14, 117, 78);
+    border-bottom: 2px solid rgb(14, 117, 78);
+}
+
+.propertiesflex
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0 20px 0;
+    align-items: center;
+}
+
+.propertycard p
+{
+    font-size: 18px;
+}
+.propertycard img
+{
+    cursor: pointer;
+}
+.propertycard p:hover
+{
+    color: var(--btnColor);
+}
+
+.propertycard img:hover
+{
+    opacity: 0.7;
+}
+
+.btn
+{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 409.98px) 
+{
+    .ResidentialProperties h1
+    {
+        font-size: 28px;
+        text-align: center;
+    }  
+    .ResidentialProperties p
+    {
+        font-size: 14px !important;
+        width: calc(250px);
+        text-align: justify;
+    } 
+    .propertycard p
+    {
+        font-size: initial !important;
+    } 
+}
